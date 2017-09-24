@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import { Text, View } from 'react-native';
 
+// State === internal record keeping
+// Props === passing down info from parent to child
+
 class AlbumList extends Component {
     state = {albums:[]};
 
@@ -12,11 +15,17 @@ class AlbumList extends Component {
         })
     }
 
+    renderAlbums() {
+        return this.state.albums.map((album) => {
+            return <Text key={album.title}>{album.title}</Text>
+        })
+    }
+
     render() {
         console.log(this.state);
         return (
             <View>
-                <Text>Album List!!!!</Text>
+                {this.renderAlbums()}
             </View>
         );
     }
