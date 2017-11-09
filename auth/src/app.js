@@ -5,6 +5,7 @@ class App extends Component {
     render() {
         return (
             <View>
+                <Text>An App!</Text>
             </View>
         )
     }
