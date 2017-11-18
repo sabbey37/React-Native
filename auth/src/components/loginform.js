@@ -6,7 +6,7 @@ class LoginForm extends Component {
     state = {
         email: '',
         password: '',
-        error: 
+        error: ''
     };
 
     onButtonPress() {
@@ -15,7 +15,7 @@ class LoginForm extends Component {
             .catch(() => {
                 firebase.auth().createUserWithEmailAndPassword(email, password)
                     .catch(() => {
-
+                        this.setState({error: "Authentication Failed."});
                     })
             });
     }
