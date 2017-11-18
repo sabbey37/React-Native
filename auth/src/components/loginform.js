@@ -30,6 +30,9 @@ class LoginForm extends Component {
                         value={ this.state.email }
                         onChangeText = { email => this.setState({email}) }/>
                 </CardSection>
+                <Text>
+                    {this.state.error}
+                </Text>
                 <CardSection>
                     <Input 
                         secureTextEntry
