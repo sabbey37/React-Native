@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import firebase from 'firebase';
 import {Text} from 'react-native';
-import {Button, Card, CardSection, Input} from './common';
+import {Button, Card, CardSection, Input, Spinner} from './common';
 
 class LoginForm extends Component {
     state = {
@@ -15,12 +15,24 @@ class LoginForm extends Component {
         const { email, password } = this.state;
         this.setState({error: '', loading: true});
         firebase.auth().signInWithEmailAndPassword(email, password)
+            .then(() => {
+
+            })
             .catch(() => {
                 firebase.auth().createUserWithEmailAndPassword(email, password)
                     .catch(() => {
                         this.setState({error: "Authentication Failed."});
-                    })
+                    });
             });
+    }
+
+    onLoginSuccess() {
+        this.setState({
+            email: '',
+            password: '',
+            error: '',
+            loading: false
+        });
     }
 
     renderButton(){
