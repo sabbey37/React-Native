@@ -7,6 +7,8 @@ class LibraryList extends Component {
         const ds = new ListView.DataSource({
             rowHasChanged: (r1, r2) => r1 !== r2 
         });
+        // use list of libraries to render data to screen
+        this.dataSource = ds.cloneWithRows(this.props.libraries);
     }
 
     render() {
