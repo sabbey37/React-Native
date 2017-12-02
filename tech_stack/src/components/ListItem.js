@@ -24,4 +24,4 @@ const styles = {
     }
 }
 
-export default connect()(ListItem);
+export default connect(null, actions)(ListItem);
