@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text} from 'react-native';
+import {Text, TouchableWithoutFeedback, View} from 'react-native';
 import {connect} from 'react-redux';
 import {CardSection} from './common';
 import * as actions from '../actions';
@@ -8,11 +8,15 @@ class ListItem extends Component {
     render() {
         const {titleStyle} = styles;
         return (
-            <CardSection>
-                <Text style={titleStyle}>
-                    {this.props.library.title}
-                </Text>
-            </CardSection>
+            <TouchableWithoutFeedback>
+                <View>
+                    <CardSection>
+                        <Text style={titleStyle}>
+                            {this.props.library.title}
+                        </Text>
+                    </CardSection>
+                </View>
+            </TouchableWithoutFeedback>
         )
     }
 }
