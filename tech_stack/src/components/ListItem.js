@@ -26,6 +26,7 @@ class ListItem extends Component {
                             {title}
                         </Text>
                     </CardSection>
+                    {this.renderDescription()};
                 </View>
             </TouchableWithoutFeedback>
         )
