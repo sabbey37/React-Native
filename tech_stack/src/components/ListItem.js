@@ -10,7 +10,11 @@ class ListItem extends Component {
         if (ibrary.id === selectedLibraryId) {
             if (expanded) {
                 return (
-                    <Text>{ library.description }</Text>
+                    <CardSection>
+                        <Text style={{flex: 1}}>
+                            { library.description }
+                        </Text>
+                    </CardSection>
                 );
             };
         }
