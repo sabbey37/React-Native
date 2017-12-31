@@ -11,8 +11,18 @@ class LoginForm extends Componenet {
                         placeholder="email@gmail.com"
                     />
                 </CardSection>
-                <CardSection></CardSection>
-                <CardSection></CardSection>
+                <CardSection>
+                    <Input 
+                        secureTextEntry
+                        label="Password"
+                        placeholder="password"
+                    />
+                </CardSection>
+                <CardSection>
+                    <Button>
+                        Login
+                    </Button>
+                </CardSection>
             </Card>
         );
     }
