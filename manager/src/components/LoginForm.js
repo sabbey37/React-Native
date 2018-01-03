@@ -19,9 +19,9 @@ class LoginForm extends Componenet {
                     />
                 </CardSection>
                 <CardSection>
-                    <Button>
+                    {/*<Button>
                         Login
-                    </Button>
+                    </Button>*/}
                 </CardSection>
             </Card>
         );
