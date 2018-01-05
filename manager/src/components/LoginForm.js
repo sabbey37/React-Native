@@ -2,6 +2,10 @@ import React, { Componenet } from 'react';
 import { Card, CardSection, Input, Button } from './common';
 
 class LoginForm extends Componenet {
+    onEmailChange(text) {
+        
+    }
+
     render() {
         return (
             <Card>
@@ -9,6 +13,7 @@ class LoginForm extends Componenet {
                     <Input 
                         label="Email"
                         placeholder="email@gmail.com"
+                        onChangeText={this.onEmailChange.bind(this)}
                     />
                 </CardSection>
                 <CardSection>
