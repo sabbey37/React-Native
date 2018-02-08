@@ -1,2 +1,2 @@
 # React-Native-Practice
-Practicing React Native with Udemy course
+Practicing React Native
