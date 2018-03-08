@@ -1,9 +1,11 @@
 import React, { Componenet } from 'react';
+import { connect } from 'react-redux';
+import { emailChanged } from '../actions';
 import { Card, CardSection, Input, Button } from './common';
 
 class LoginForm extends Componenet {
     onEmailChange(text) {
-        
+        this.props.emailChanged(text);
     }
 
     render() {
@@ -33,4 +35,4 @@ class LoginForm extends Componenet {
     }
 }
 
-export default LoginForm;
+export default connect(null, { emailChanged })(LoginForm);
