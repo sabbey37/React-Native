@@ -13,7 +13,8 @@
 		"hoek": "^5.0.3",
 		"merge": "^1.2.1",
 		"react": "16.0.0-alpha.12",
-		"react-native": "0.47.0"
+		"react-native": "0.47.0",
+		"sshpk": "^1.15.2"
 	},
 	"devDependencies": {
 		"babel-jest": "21.0.2",
