@@ -13,6 +13,7 @@
 		"hoek": "^5.0.3",
 		"lodash": "^4.17.11",
 		"merge": "^1.2.1",
+		"negotiator": "^0.6.1",
 		"randomatic": "^3.1.1",
 		"react": "16.0.0",
 		"react-native": "0.50.3",
