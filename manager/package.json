@@ -35,7 +35,6 @@
     "react-native": "0.50.3",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
-    "sshpk": "^1.15.2",
-    "sync-exec": "^0.6.2"
+    "sshpk": "^1.15.2"
   }
 }
